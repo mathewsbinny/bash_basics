@@ -18,20 +18,32 @@ fi
 echo "What day is today in the week? (Ex. Monday, Tuesday, etc.)"
 read day
 
-if [ "$day" = "Monday" ]; then
-   echo "Not the weekend yet :("
-elif [ "$day" = "Tuesday" ]; then
-   echo "Not the weekend yet :("
-elif [ "$day" = "Wednesday" ]; then
-   echo "Not the weekend yet :("
-elif [ "$day" = "Thursday" ]; then
-   echo "Not the weekend yet :("
-elif [ "$day" = "Friday" ]; then
-   echo "Thank God it's Friday! ^^"
-elif [ "$day" = "Saturday" ]; then
-   echo "It's the weekend! Time to relax :)"
-elif [ "$day" = "Sunday" ]; then
-   echo "It's the weekend! Time to relax :)"
-else
-   echo "You didn't type the day in correctly... Run the file again :/"
-fi
+while true; do
+    echo "What day is today in the week? (Ex. Monday, Tuesday, etc.)"
+    read day
+
+    if [ "$day" = "Monday" ]; then
+        echo "Not the weekend yet :("
+        break
+    elif [ "$day" = "Tuesday" ]; then
+        echo "Not the weekend yet :("
+        break
+    elif [ "$day" = "Wednesday" ]; then
+        echo "Not the weekend yet :("
+        break
+    elif [ "$day" = "Thursday" ]; then
+        echo "Not the weekend yet :("
+        break
+    elif [ "$day" = "Friday" ]; then
+        echo "Thank God it's Friday! ^^"
+        break
+    elif [ "$day" = "Saturday" ]; then
+        echo "It's the weekend! Time to relax :)"
+        break
+    elif [ "$day" = "Sunday" ]; then
+        echo "It's the weekend! Time to relax :)"
+        break
+    else
+        echo "You didn't type the day in correctly... Try again :/"
+    fi
+done
