@@ -15,4 +15,12 @@ echo "$name, type in a name for a new file"
 read filename
 echo "Thank you. Creating a file named $filename"
 touch $filename.txt
-echo 'File $filename created.'
+echo "File $filename created."
+
+echo "$name, what flavor of icecream do you like, chocolate or vanilla?"
+read flavor
+if [ "$flavor" = "chocolate" ]; then
+    echo "Here is a virtual chocolate ice cream cone! <3"
+else
+    echo "Sorry, I don't rock with vanilla. Game Over."
+fi
